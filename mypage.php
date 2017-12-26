@@ -1,6 +1,6 @@
 <?php
 //Step1
- $db = mysqli_connect('localhost','root','root','database_name')
+ $db = mysqli_connect('localhost','root','root','test_db')
  or die('Error connecting to MySQL server.');
 ?>
 
@@ -12,7 +12,7 @@
 
 <?php
 //Step2
-$query = "SELECT * FROM table_name";
+$query = "SELECT * FROM users";
 mysqli_query($db, $query) or die('Error querying database.');
 
 //Step3
